@@ -89,7 +89,7 @@ namespace HtmlAgilityPack
 
 			// tags that can not contain other tags
 			ElementsFlags.Add("base", HtmlElementFlag.Empty);
-			ElementsFlags.Add("link", HtmlElementFlag.Empty);
+			//ElementsFlags.Add("link", HtmlElementFlag.Empty); //disable by neo
 			ElementsFlags.Add("meta", HtmlElementFlag.Empty);
 			ElementsFlags.Add("isindex", HtmlElementFlag.Empty);
 			ElementsFlags.Add("hr", HtmlElementFlag.Empty);
@@ -109,7 +109,7 @@ namespace HtmlAgilityPack
 			ElementsFlags.Add("form", HtmlElementFlag.CanOverlap | HtmlElementFlag.Empty);
 
 			// they sometimes contain, and sometimes they don 't...
-			ElementsFlags.Add("option", HtmlElementFlag.Empty);
+			//ElementsFlags.Add("option", HtmlElementFlag.Empty); //disable by neo
 
 			// tag whose closing tag is equivalent to open tag:
 			// <p>bla</p>bla will be transformed into <p>bla</p>bla
