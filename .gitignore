@@ -9,7 +9,3 @@ Z.Lab/
 _ReSharper.*
 *.ReSharper.user
 *.resharper.user 
-####################
-# Neo #
-####################
-/src/Nuget/lib/Net20
