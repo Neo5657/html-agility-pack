@@ -1,4 +1,4 @@
-// HtmlAgilityPack V1.0 - Simon Mourier <simon underscore mourier at hotmail dot com>
+﻿// HtmlAgilityPack V1.0 - Simon Mourier <simon underscore mourier at hotmail dot com>
 
 using System;
 using System.Reflection;
@@ -21,15 +21,15 @@ using System.Security;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ZZZ Projects Inc.")]
 [assembly: AssemblyProduct("Html Agility Pack")]
-[assembly: AssemblyCopyright("Copyright � ZZZ Projects Inc. 2014 - 2017")]
+[assembly: AssemblyCopyright("Copyright © ZZZ Projects Inc. 2014 - 2017")]
 [assembly: AssemblyTrademark("SQL & .NET Tools")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(true)]
 [assembly: Guid("643622ea-d2aa-4572-a2b2-6202b7fcd83f")]
-[assembly: AssemblyVersion("1.6.0")]
+[assembly: AssemblyVersion("1.6.10")]
 #if !PocketPC
-[assembly: AssemblyFileVersion("1.6.0")]
-[assembly: AssemblyInformationalVersion("1.6.0")]
+[assembly: AssemblyFileVersion("1.6.10")]
+[assembly: AssemblyInformationalVersion("s.1.6.10")]
 #if !SILVERLIGHT
 [assembly: AllowPartiallyTrustedCallers]
 #endif

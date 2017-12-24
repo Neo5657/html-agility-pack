@@ -97,7 +97,7 @@ namespace HtmlAgilityPack
 
 			// tags that can not contain other tags
 			ElementsFlags.Add("base", HtmlElementFlag.Empty);
-			ElementsFlags.Add("link", HtmlElementFlag.Empty);
+			//ElementsFlags.Add("link", HtmlElementFlag.Empty); //Neo
 			ElementsFlags.Add("meta", HtmlElementFlag.Empty);
 			ElementsFlags.Add("isindex", HtmlElementFlag.Empty);
 			ElementsFlags.Add("hr", HtmlElementFlag.Empty);
