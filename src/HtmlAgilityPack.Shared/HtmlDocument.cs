@@ -3,7 +3,7 @@
 // Forum & Issues: https://github.com/zzzprojects/html-agility-pack
 // License: https://github.com/zzzprojects/html-agility-pack/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
-// Copyright © ZZZ Projects Inc. 2014 - 2017. All rights reserved.
+// Copyright ?ZZZ Projects Inc. 2014 - 2017. All rights reserved.
 
 using System;
 using System.Collections.Generic;
@@ -210,7 +210,7 @@ namespace HtmlAgilityPack
         /// <value>The parsed text.</value>
         public string ParsedText
         {
-            get { return Text; } 
+            get { return Text; }
         }
 
         /// <summary>
@@ -228,7 +228,7 @@ namespace HtmlAgilityPack
         /// </summary>
         public int CheckSum
         {
-            get { return _crc32 == null ? 0 : (int) _crc32.CheckSum; }
+            get { return _crc32 == null ? 0 : (int)_crc32.CheckSum; }
         }
 
         /// <summary>
@@ -416,7 +416,7 @@ namespace HtmlAgilityPack
         /// <returns>The new HTML comment node.</returns>
         public HtmlCommentNode CreateComment()
         {
-            return (HtmlCommentNode) CreateNode(HtmlNodeType.Comment);
+            return (HtmlCommentNode)CreateNode(HtmlNodeType.Comment);
         }
 
         /// <summary>
@@ -457,7 +457,7 @@ namespace HtmlAgilityPack
         /// <returns>The new HTML text node.</returns>
         public HtmlTextNode CreateTextNode()
         {
-            return (HtmlTextNode) CreateNode(HtmlNodeType.Text);
+            return (HtmlTextNode)CreateNode(HtmlNodeType.Text);
         }
 
         /// <summary>
@@ -677,7 +677,7 @@ namespace HtmlAgilityPack
                 }
                 // ReSharper disable EmptyGeneralCatchClause
                 catch (Exception)
-                    // ReSharper restore EmptyGeneralCatchClause
+                // ReSharper restore EmptyGeneralCatchClause
                 {
                     // void on purpose
                 }
@@ -777,7 +777,7 @@ namespace HtmlAgilityPack
         /// <param name="writer">The StreamWriter to which you want to save.</param>
         public void Save(StreamWriter writer)
         {
-            Save((TextWriter) writer);
+            Save((TextWriter)writer);
         }
 
         /// <summary>
@@ -944,7 +944,7 @@ namespace HtmlAgilityPack
                         // this is a hack: add it as a text node
                         HtmlNode closenode = CreateNode(HtmlNodeType.Text, _currentnode._outerstartindex);
                         closenode._outerlength = _currentnode._outerlength;
-                        ((HtmlTextNode) closenode).Text = ((HtmlTextNode) closenode).Text.ToLower();
+                        ((HtmlTextNode)closenode).Text = ((HtmlTextNode)closenode).Text.ToLower();
                         if (_lastparentnode != null)
                         {
                             _lastparentnode.AppendChild(closenode);
@@ -1638,8 +1638,8 @@ namespace HtmlAgilityPack
             }
 
             // TODO: Add implicit end here?
-             
-            
+
+
             // finish the current work
             if (_currentnode._namestartindex > 0)
             {
