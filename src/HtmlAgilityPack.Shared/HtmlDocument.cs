@@ -58,6 +58,7 @@ namespace HtmlAgilityPack
         private ParseState _state;
         private Encoding _streamencoding;
         internal string Text;
+        private string Source;
 
 
         /// <summary>True to stay backward compatible with previous version of HAP. This option does not guarantee 100% compatibility.</summary>
@@ -211,6 +212,14 @@ namespace HtmlAgilityPack
         public string ParsedText
         {
             get { return Text; }
+        }
+
+        /// <summary>
+        /// Get LoadHtml Source
+        /// </summary>
+        public string InitialSource
+        {
+            get { return Source; }
         }
 
         /// <summary>
@@ -735,6 +744,7 @@ namespace HtmlAgilityPack
             {
                 throw new ArgumentNullException("html");
             }
+            Source = html;
             using (StringReader sr = new StringReader(html))
             {
                 Load(sr);
